@@ -6,15 +6,15 @@ These projects help me practice semantic HTML, CSS styling, responsive design, F
 
 ## Projects
 
-Semantic Bio Page
-Full Portfolio Page Structure in Semantic HTML
-Design Tokens and Typography System in CSS
-Sticky Navbar and Card Overlay Using CSS Positioning
-Responsive Navbar and Card Grid Using Flexbox
-Portfolio Header and Footer with Advanced Flexbox
-Newspaper-Style Three-Column Layout with CSS Grid
-Portfolio Projects Grid with Advanced CSS Grid
-Choosing Between Flexbox and Grid for a Shared Layout
+| Semantic Bio Page |
+Full Portfolio Page Structure in Semantic HTML |
+Design Tokens and Typography System in CSS |
+Sticky Navbar and Card Overlay Using CSS Positioning |
+Responsive Navbar and Card Grid Using Flexbox |
+Portfolio Header and Footer with Advanced Flexbox |
+Newspaper-Style Three-Column Layout with CSS Grid |
+Portfolio Projects Grid with Advanced CSS Grid |
+Choosing Between Flexbox and Grid for a Shared Layout |
 
 ## Technologies Used
 
