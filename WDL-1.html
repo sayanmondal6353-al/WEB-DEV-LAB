@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sayan | Bio Page</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #10131a;
+      color: #f2f4f7;
+    }
+
+    .container {
+      width: min(900px, 90%);
+      margin: auto;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 0;
+    }
+
+    .logo {
+      font-weight: bold;
+    }
+
+    nav a {
+      color: #a1aab8;
+      text-decoration: none;
+      margin-left: 18px;
+    }
+
+    nav a:hover {
+      color: #c9ff7a;
+    }
+
+    .hero {
+      padding: 80px 0 55px;
+      border-bottom: 1px solid #2a3140;
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 76px);
+      line-height: 1;
+      letter-spacing: -3px;
+      margin: 0;
+    }
+
+    .intro {
+      max-width: 600px;
+      margin-top: 24px;
+      color: #a1aab8;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .skills {
+      margin-top: 28px;
+    }
+
+    .skills h2 {
+      font-size: 20px;
+    }
+
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      padding: 0;
+      list-style: none;
+    }
+
+    .skills li {
+      border: 1px solid #2a3140;
+      border-radius: 20px;
+      color: #a1aab8;
+      padding: 8px 14px;
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      padding: 24px 0 50px;
+    }
+
+    .card {
+      background: #181d27;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .label {
+      color: #c9ff7a;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin: 14px 0 10px;
+      font-size: 24px;
+    }
+
+    .card p {
+      color: #a1aab8;
+      line-height: 1.5;
+    }
+
+    .card a {
+      color: #c9ff7a;
+      text-decoration: none;
+    }
+
+    footer {
+      border-top: 1px solid #2a3140;
+      color: #a1aab8;
+      padding: 25px 0;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      nav a {
+        margin: 0 8px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <p class="logo">Sayan.dev</p>
+
+    <nav>
+      <a href="#about">About</a>
+      <a href="#project">Project</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="about">
+      <h1>
+        Hi, I’m Sayan.<br>
+        I’m learning to build websites.
+      </h1>
+
+      <p class="intro">
+        I am a beginner developer learning HTML, CSS, JavaScript,
+        and how to create useful digital experiences.
+      </p>
+
+      <section class="skills">
+        <h2>Skills I Am Learning</h2>
+
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>UI Design</li>
+          <li>GitHub</li>
+        </ul>
+      </section>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="project">
+        <p class="label">Currently building</p>
+        <h2>SolveSpace</h2>
+        <p>
+          An offline-first coding practice app with questions,
+          progress tracking, streaks, hints, and learning tools.
+        </p>
+      </article>
+
+      <section class="card" id="contact">
+        <p class="label">Connect with me</p>
+        <h2>Let’s connect</h2>
+        <p>
+          <a href="https://github.com/sayanmondal6353-al" target="_blank" rel="noopener">
+            GitHub
+          </a>
+        </p>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Semantic Bio Page. Built with HTML and CSS.</p>
+  </footer>
+</body>
+</html>
