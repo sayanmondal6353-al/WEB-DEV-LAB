@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Bio Page</title>
+    <style>
+      body{
+        margin:0px;
+      }
+
+       .navbar {
+           display: flex;
+           gap: 15px;
+           padding: 0;
+           background-color: transparent;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .navbar a:hover {
+            color: #6ca6e3;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        section, aside {
+            background-color: white;
+            padding: 15px 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid rgb(207, 206, 206);
+        }
+
+        h2 {
+            color: blue;
+            padding-bottom: 5px;
+        }
+
+        footer {
+            background-color: gray;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: #60a5fa;
+            text-decoration: none;
+        }
+        .subtitle {
+            font-size: 18px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 10px 15px;
+            margin-top: 10px;
+        }
+
+        #main-header {
+            background-color: blue;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+        }
+
+        #main-title {
+            font-size: 32px;
+        }
+       
+    </style>
+</head>
+<body>
+    <header id="main-header">
+    <div>
+        <h1 id="main-title">Sayan Mondal</h1>
+        <p class="subtitle">B.Tech CSE AI / ML Student</p>
+    </div>
+
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+    <main>
+        <section >
+            <h2>About Me</h2>
+            <p>Hello! I am a first-year engineering student passionate about Artificial Intelligence and building clean, modern web applications.</p>
+        </section>
+
+        <section>
+            <h2>Education and Projects</h2>
+            <article class="card">
+                <h3>B.Tech in AI and Machine Learning</h3>
+                <p>Currently pursuing my undergraduate degree with a focus on core computer science and programming.</p>
+            </article>
+            <article class="card">
+                <h3>Web Expenses Tracker</h3>
+                <p>Built web prototypes and collaborative projects using HTML, CSS, and React.</p>
+            </article>
+        </section>
+
+        <aside>
+            <h2>Technical Skills</h2>
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Java, C and Python</li>
+                <li>React and  Tailwind CSS</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer >
+        <p>Contact: sayan@gmail.com</p>
+        <p>&copy; 2026 Semantic Bio Page. All rights reserved</p>
+    </footer>
+
+</body>
+</html>
