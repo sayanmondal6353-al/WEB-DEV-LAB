@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P8 Sticky Navbar</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f5f9;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #1b5c2a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1;
+      background-color: #048b62;
+      padding: 12px;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #b7e4c7;
+    }
+
+    main {
+      max-width: 700px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1b5c2a;
+    }
+
+    .card {
+      position: relative;
+      height: 220px;
+      overflow: hidden;
+      border-radius: 8px;
+      background-color: #5d9c6d;
+    }
+
+    .card-text {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 15px;
+      background-color: rgba(0, 0, 0, 0.65);
+      color: white;
+    }
+
+    .card-text h3 {
+      margin: 0;
+    }
+    
+    footer {
+      background-color: #1a5a37;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Sticky Navbar and Card Overlay</h1>
+    <p>P8 CSS Positioning</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#project">Project</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>This page shows a sticky navbar and text overlay on a project card.</p>
+    </section>
+
+    <section id="project">
+      <h2>Featured Project</h2>
+
+      <div class="card">
+        <div class="card-text">
+          <h3>card overlay using CSS positioning</h3>
+        </div>
+      </div>
+    </section>
+    
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: sayan@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sayan Mondal</p>
+  </footer>
+</body>
+</html>
