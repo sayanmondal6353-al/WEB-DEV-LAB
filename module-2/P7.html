@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design Tokens and Typography</title>
+
+  <style>
+    :root {
+      --primary-color: #1b5c2a;
+      --secondary-color: #1a5a37;
+      --background-color: #f1f5f9;
+      --card-color: #ffffff;
+      --text-color: #1f2937;
+      --muted-text: #64748b;
+      --border-color: #dbeafe;
+
+      --font-main: Arial, sans-serif;
+      --font-size-small: 14px;
+      --font-size-normal: 16px;
+      --font-size-medium: 20px;
+      --font-size-large: 30px;
+
+      --space-small: 10px;
+      --space-medium: 20px;
+      --space-large: 35px;
+
+      --radius: 8px;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--font-main);
+      background-color: var(--background-color);
+      color: var(--text-color);
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      text-align: center;
+      padding: 20px var(--space-medium);
+    }
+    
+     h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+
+    .subtitle {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: var(--space-large) auto;
+      padding: 0 var(--space-medium);
+    }
+
+    section {
+      background-color: var(--card-color);
+      margin-bottom: var(--space-medium);
+      padding: var(--space-medium);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+    }
+
+    h2 {
+      margin-top: 0;
+      color: var(--secondary-color);
+      font-size: var(--font-size-medium);
+    }
+
+    p {
+      font-size: var(--font-size-normal);
+      line-height: 1.6;
+    }
+
+    .small-text {
+      color: var(--muted-text);
+      font-size: var(--font-size-small);
+    }
+
+    .button {
+      display: inline-block;
+      background-color: var(--primary-color);
+      color: white;
+      padding: var(--space-small) var(--space-medium);
+      border-radius: var(--radius);
+      text-decoration: none;
+      font-size: var(--font-size-normal);
+    }
+
+    .button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    footer {
+      background-color: var(--secondary-color);
+      color: white;
+      text-align: center;
+      padding: var(--space-medium);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Design Tokens and Typography</h1>
+    <p class="subtitle">P7: Typography and reusable CSS variables</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>What are Design Tokens?</h2>
+      <p>
+        Design tokens are reusable CSS values for colors, font sizes, spacing,
+        borders, and other common design choices.
+      </p>
+      <p class="small-text">
+        Here, the values are stored inside the :root selector.
+      </p>
+    </section>
+
+    <section>
+      <h2>Typography System</h2>
+      <p>
+        A typography system keeps heading sizes, paragraph text, and small text
+        consistent throughout a website.
+      </p>
+      <a href="#" class="button">Learn More</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sayan Mondal | Design tokens and typography system in CSS</p>
+  </footer>
+</body>
+</html>
