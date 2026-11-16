@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P9 Responsive Navbar and Card Grid</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f1f5f9;
+      color: #1f2937;
+    }
+
+    header {
+      background-color: #2c8cb5;
+      color: white;
+      text-align: center;
+      padding: 13px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      background-color: #007289;
+      padding: 14px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      color: #289178;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 15px;
+    }
+
+    section {
+      background-color: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #225177;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .card {
+      flex: 1 1 220px;
+      padding: 20px;
+      background-color: #e6f4f3;
+      border-radius: 8px;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #1c5787;
+    }
+
+    footer {
+      background-color: #3d88c0;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Responsive Navbar and Card Grid</h1>
+    <p>P9 Flexbox Assignment</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p>This page uses Flexbox for a responsive navbar and card grid.</p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <div class="card-container">
+        <article class="card">
+          <h3>Web Expense Tracker</h3>
+          <p>A website for recording and managing daily expenses.</p>
+        </article>
+
+        <article class="card">
+          <h3>Portfolio Page</h3>
+          <p>A personal portfolio website created with HTML and CSS.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: sayan@example.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Sayan Mondal</p>
+  </footer>
+</body>
+</html>
