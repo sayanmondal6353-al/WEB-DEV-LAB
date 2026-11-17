@@ -69,20 +69,6 @@
       margin-top: 0;
       color: #225177;
     }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-    }
-
-    .skill {
-      background-color: #e6f4f3;
-      color: #1c5787;
-      padding: 8px 12px;
-      border-radius: 6px;
-    }
-
     footer {
       display: flex;
       justify-content: space-between;
@@ -97,24 +83,19 @@
     footer p {
       margin: 0;
     }
-
-    footer a {
-      color: white;
-      text-decoration: none;
-    }
   </style>
 </head>
 
 <body>
-  <header>
+  <header id="Home">
     <div class="header-text">
       <h1>Sayan Mondal</h1>
       <p>B.Tech CSE AI and ML Student</p>
     </div>
 
     <nav>
+      <a href="#Home">Home</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -127,18 +108,6 @@
       </p>
     </section>
 
-    <section id="skills">
-      <h2>Skills</h2>
-
-      <div class="skills">
-        <div class="skill">HTML</div>
-        <div class="skill">CSS</div>
-        <div class="skill">Java</div>
-        <div class="skill">Python</div>
-        <div class="skill">GitHub</div>
-      </div>
-    </section>
-
     <section id="contact">
       <h2>Contact</h2>
       <p>Email: sayan@example.com</p>
@@ -147,7 +116,6 @@
 
   <footer>
     <p> &copy; 2026 Sayan Mondal</p>
-    <a href="#about">Back to Top</a>
   </footer>
 </body>
 </html>
