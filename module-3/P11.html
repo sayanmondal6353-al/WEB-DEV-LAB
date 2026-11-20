@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P11 Newspaper Layout</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    main {
+      margin: 30px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .news-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    article {
+      padding: 15px;
+      border: 1px solid black;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #3f877a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Newspaper-Style Three-Column Layout Using CSS Grid</h1>
+
+    <div class="news-grid">
+      <article>
+        <h2>College Hackathon</h2>
+        <p>
+          Students participated in a hackathon and created projects for different problems.
+        </p>
+      </article>
+
+      <article>
+        <h2>AI Workshop</h2>
+        <p>
+          The AI club conducted a workshop about Python and machine learning.
+        </p>
+      </article>
+
+      <article>
+        <h2>Library Update</h2>
+        <p>
+          The college library added new books on programming and web development.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sayan Mondal - CSS Grid</p>
+  </footer>
+</body>
+</html>

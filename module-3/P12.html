@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P12 Portfolio Projects Grid</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+    header {
+      background-color: #3f877a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    
+    main {
+      margin: 30px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 20px;
+    }
+
+    .project {
+      padding: 15px;
+      border: 1px solid black;
+    }
+
+    .project-one {
+      grid-column: span 2;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #3f877a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Portfolio Projects Grid Using CSS Grid</h1>
+  </header>
+  <main>
+      <div class="project-grid">
+      <article class="project project-one">
+        <h2>Web Expense Tracker</h2>
+        <p>
+          A web application used to record daily expenses and manage a personal budget.
+        </p>
+      </article>
+
+      <article class="project">
+        <h2>Portfolio Page</h2>
+        <p>
+          A personal portfolio website created using HTML and CSS.
+        </p>
+      </article>
+
+      <article class="project">
+        <h2>College Portal</h2>
+        <p>
+          A basic college portal layout for students and teachers.
+        </p>
+      </article>
+
+      <article class="project">
+        <h2>AI Workshop Page</h2>
+        <p>
+          A simple webpage containing information about an AI workshop.
+        </p>
+      </article>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Sayan Mondal - CSS Grid</p>
+  </footer>
+</body>
+</html>

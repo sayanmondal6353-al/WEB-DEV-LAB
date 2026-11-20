@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P13 Flexbox and Grid</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #3f877a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 15px;
+      border-bottom: 1px solid black;
+    }
+
+    nav a {
+      color: black;
+      text-decoration: none;
+    }
+
+    main {
+      margin: 30px;
+    }
+
+    .layout-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+
+    section {
+      padding: 15px;
+      border: 1px solid black;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      background-color: #3f877a;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Choosing Between Flexbox and Grid</h1>
+  </header>
+
+  <nav>
+    <a href="#flexbox">Flexbox</a>
+    <a href="#grid">Grid</a>
+  </nav>
+
+  <main>
+    <div class="layout-grid">
+      <section id="flexbox">
+        <h2>Flexbox</h2>
+        <p>
+          Flexbox is useful for arranging items in one direction.
+        </p>
+      </section>
+
+      <section id="grid">
+        <h2>CSS Grid</h2>
+        <p>
+          CSS Grid is useful for arranging items in rows and columns.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy;  2026 Sayan Mondal - Flexbox and Grid</p>
+  </footer>
+</body>
+</html>
